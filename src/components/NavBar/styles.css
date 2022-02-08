@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 7rem;
+  
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,121,9,0.7399334733893557) 35%, rgba(0,212,255,1) 100%);
+  position: relative;
+}
+.sign-out-button {
+  position: absolute;
+  right: 3.2rem;
+  top: 2rem;
+  cursor: pointer;
+  width: 5rem;
+  height: 3rem;
+   opacity: 0.4;
+
+}

@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  height: 100vh;
+}
+
+main div {
+  width: 50%;
+ 
+}
+.left{
+   background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,121,9,0.7399334733893557) 35%, rgba(0,212,255,1) 100%);
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-right form {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.container-right form h1 {
+  margin: 0 0 3.2rem 0;
+}
+
+.btn-login {
+  margin-top: 7.2rem;
+}
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  width: 40rem;
+  margin-top: 9.6rem;
+}
+
+.register-link span {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px){
+  .left{
+    display: none;
+  
+  }
+    .container-right{
+  
+   min-width: 100vw;
+   min-height: 100vh;
+   
+ }
+ .container-right form{
+   min-width:430px;
+  
+ }
+
+ 
+}

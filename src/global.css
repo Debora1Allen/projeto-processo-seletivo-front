@@ -1,0 +1,35 @@
+.btn {
+  border: none;
+  height: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-positive {
+   background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(81,121,9,0.7399334733893557) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+.btn-negative {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,39,0.835171568627451) 35%, rgba(255,0,61,0.23573179271708689) 100%);
+}
+
+.backdrop {
+  background: rgba(16, 15, 15, 0.56);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
