@@ -1,0 +1,41 @@
+.container-table {
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.header-table {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  background: #8fac9c;
+  text-align: left;
+  padding: 0 24px;
+}
+
+.header-table strong {
+  width: 25%;
+}
+
+.body-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-table {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  background: #FFFAFA;
+  text-align: left;
+  position: relative;
+  margin-bottom: 8px;
+  padding: 0 24px;
+}
+
+.line-table:first-child {
+  margin-top: 24px;
+}
+
+.line-table span {
+  width: 25%;
+}
