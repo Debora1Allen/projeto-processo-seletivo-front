@@ -17,8 +17,9 @@ a {
 }
 input[type="text"], input[type="password"] {
   background-color: #FDFAFA;
-  border: 0.1rem solid #E8E8E8;
-  height: 5.1rem;
+  border: 0.1rem solid #dbc9c9;
+  min-width: 40rem;
+  min-height: 5.1rem;
   border-radius: 8px;
   margin: 0.8rem 0;
   padding: 0 1.6rem;

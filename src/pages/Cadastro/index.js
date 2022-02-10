@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import useRequests from '../../hooks/useRequest';
+import InputSenha from '../../components/InputSenha';
 import './style.css';
 
 const defaultValuesForm = { name: '', email: '', password: '' };
@@ -60,7 +61,7 @@ function Cadastro() {
                         onChange={(e) => handleChange(e.target)}
                     />
 
-                    <input
+                    <InputSenha
                         name="password"
                         type="password"
                         placeholder="Senha"

@@ -22,7 +22,7 @@ function useRequests() {
             toast.mensagemError(error.message)
         }
     }
-    async function post(body, withToken) {
+    async function post(route, body, withToken) {
 
         const config = withToken ? {
             'Authorization': `Bearer ${token}`

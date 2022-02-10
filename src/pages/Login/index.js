@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 
 import useRequests from '../../hooks/useRequest';
 import useGlobal from '../../hooks/useGlobal';
+import InputSenha from '../../components/InputSenha';
 import './style.css';
 
 function Login() {
@@ -52,7 +53,7 @@ function Login() {
                         onChange={(e) => setEmail(e.target.value)}
                     />
 
-                    <input
+                    <InputSenha
                         type="password"
                         placeholder="Senha"
                         value={password}

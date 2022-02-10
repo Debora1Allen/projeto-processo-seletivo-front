@@ -1,0 +1,17 @@
+.custom-input-senha {
+  position: relative;
+  display: flex;
+}
+
+.custom-input-senha input {
+  flex-grow: 1;
+}
+
+.custom-input-senha img {
+  width: 20px;
+  height: 18px;
+
+  position: absolute;
+  top: 25px;
+  left: 390px;
+}
