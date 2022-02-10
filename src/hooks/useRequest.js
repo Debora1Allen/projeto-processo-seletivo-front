@@ -3,9 +3,9 @@ import toast from '../helpers/toast';
 function useRequests() {
     const { token } = useGlobal();
     //get para fornecedores
-    async function get() {
+    async function get(route) {
         try {
-            const response = await fetch('', {
+            const response = await fetch(`http://localhost:3000/${route}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -29,7 +29,7 @@ function useRequests() {
         } : {}
 
         try {
-            const response = await fetch('', {
+            const response = await fetch(`http://localhost:3000/${route}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ function useRequests() {
 
     async function put(body, id) {
         try {
-            const response = await fetch('', {
+            const response = await fetch(`http://localhost:3000/${route}/${id}`, {
                 method: 'PUT',
                 body: JSON.stringify(body),
                 headers: {
@@ -74,9 +74,9 @@ function useRequests() {
             toast.mensagemError(error.message)
         }
     }
-    async function getOne(id) {
+    async function getOne(route, id) {
         try {
-            const response = await fetch('', {
+            const response = await fetch(`http://localhost:3000/${route}/${id}`, {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`
