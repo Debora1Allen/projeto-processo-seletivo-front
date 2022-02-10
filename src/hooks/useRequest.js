@@ -50,7 +50,7 @@ function useRequests() {
         }
     }
 
-    async function put(body, id) {
+    async function put(body, id, route) {
         try {
             const response = await fetch(`http://localhost:3000/${route}/${id}`, {
                 method: 'PUT',

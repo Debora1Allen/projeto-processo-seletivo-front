@@ -8,7 +8,7 @@ function NavBar() {
     const { removeToken } = useGlobal();
 
     function handleLogout() {
-        toast.mensagemSuccess('Até logo!');
+        toast.mensagemSuccess('Até breve');
         removeToken();
     }
 

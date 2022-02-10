@@ -6,7 +6,7 @@ function Table() {
 
 
 
-    // const { allFornecedores } = useFornecedores();
+    const { allFornecedores } = useFornecedores();
     return (
         <div className="container-table" >
 
@@ -18,7 +18,7 @@ function Table() {
                 <strong>Limite minimo/Kwh</strong>
             </div>
             <div className="body-table">
-                {/* {allFornecedores.map(item => (
+                {allFornecedores.map(item => (
                     <div className="line-table" key={item.id}>
                         <span>{item.nome}</span>
                         <span>{item.estado}</span>
@@ -27,7 +27,7 @@ function Table() {
                         <span>{item.logo}</span>
                     </div>
                 ))
-                } */}
+                }
             </div >
 
         </div >

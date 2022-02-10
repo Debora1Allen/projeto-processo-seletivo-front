@@ -21,7 +21,10 @@ function App() {
         <GlobalProvider>
           <Route path={['/', '/login']} exact component={Login} />
           <Route path='/cadastro' exact component={Cadastro} />
-          <Route path='/home' exact component={Home} />
+          <ProtectedRoutes>
+            <Route path='/home' exact component={Home} />
+          </ProtectedRoutes>
+
         </GlobalProvider>
       </Switch>
     </Router>
